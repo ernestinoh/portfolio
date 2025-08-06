@@ -2,35 +2,113 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mon Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Tsimbina Tinoh</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-  <header>
-    <h1>Ton Nom</h1>
-    <p>Développeur Web Front-End</p>
+  <header class="header" id="myheader">
+    <div>
+      <h1>Ernestino</h1>
+      <p>web developer</p>
+    </div>
+  <nav>
+    <a href="#about">about</a>
+    <a href="#projects">projects</a>
+    <a href="#skill">skills</a>
+    <a href="#contact">contact</a>
+  </nav>
+  
   </header>
-
-  <section id="apropos">
-    <h2>À propos de moi</h2>
-    <p>Je suis un développeur passionné par le web, spécialisé en HTML, CSS, JavaScript...</p>
+  
+  
+  <div class="style">
+  <span>📞 +261 34 23 396 78</span>
+  <span>📧 tsimbinaernestino@gmail.com</span>
+  </div>
+  
+  
+  <!-- About Me -->
+  <section class="propos" id="about">
+    <h2 class="titre"><i class="fas fa-user"></i> About Me</h2>
+    <p><i class="fas fa-code"></i> Passionate about modern web technologies and committed to delivering high-quality code within collaborative development environments.</p>
   </section>
 
-  <section id="projets">
-    <h2>Mes projets</h2>
+  <!-- Projects -->
+  <section class="projet" id="projects">
+    <h2 class="titre"><i class="fas fa-folder-open"></i> Mes projets</h2>
     <div class="galerie-projets">
-      <a href="projets/cv/index.html" target="_blank">📄 CV en ligne</a>
-      <a href="projets/calculatrice/index.html" target="_blank">🧮 Calculatrice</a>
-      <a href="projets/todo/index.html" target="_blank">📝 To-Do List</a>
-      <a href="projets/generateur/index.html" target="_blank">🔑 Générateur de mot de passe</a>
+      <a href="projets/cv/index.html" target="_blank"><i class="fas fa-file-alt"></i> CV en ligne</a>
+      <a href="projets/calculatrice/index.html" target="_blank"><i class="fas fa-calculator"></i> Calculatrice</a>
+      <a href="projets/todo/index.html" target="_blank"><i class="fas fa-tasks"></i> To-Do List</a>
+      <a href="projets/generateur/index.html" target="_blank"><i class="fas fa-key"></i> Générateur de mot de passe</a>
     </div>
   </section>
 
+  <!-- Skills -->
+  <section class="skill" id="skill">
+    <h2 class="titre"><i class="fas fa-laptop-code"></i> Software skills</h2>
+    <div>
+      <h3><i class="fab fa-html5"></i> Front-end</h3>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML5</li>
+        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+      </ul>
+
+      <h3><i class="fas fa-server"></i> Back-end</h3>
+      <ul>
+        <li><i class="fab fa-php"></i> PHP</li>
+      </ul>
+    </div>
+      <br>
+    <div>
+      <h3><i class="fas fa-paint-brush"></i> Graphic Design</h3>
+      <ul>
+        <li><i class="fas fa-image"></i> Adobe Photoshop</li>
+        <li><i class="fas fa-pen-nib"></i> Canvas</li>
+        <li><i class="fab fa-figma"></i> Figma</li>
+      </ul>
+    </div>
+      <br>
+    <div>
+      <h3><i class="fas fa-toolbox"></i> Tools</h3>
+      <ul>
+        <li><i class="fas fa-code"></i> VS Code</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+        <li><i class="fab fa-figma"></i> Figma</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="titre"><i class="fas fa-envelope"></i> Contactez-moi</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ton Nom</p>
+    <div>
+      <h3><i class="fas fa-share-alt"></i> Médias</h3>
+      <ul>
+        <li><i class="fab fa-linkedin"></i> LinkedIn: Tsimbina Tinoh</li>
+        <li><i class="fab fa-github"></i> Github: Ernestinoh</li>
+        <li><i class="fab fa-telegram"></i> Telegram: ERNESTINO Fahasoavana</li>
+        <li><i class="fab fa-facebook"></i> Facebook: Tsimbim-Pahasoavana</li>
+      </ul>
+    </div>
   </footer>
 
+  <!-- Bouton Retour en haut -->
+  <button id="scrollTopBtn" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
 </body>
 </html>
